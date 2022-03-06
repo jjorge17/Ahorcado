@@ -1,0 +1,400 @@
+@charset "utf-8";
+body {
+	font: Inter;
+	margin: 0;
+	padding: 0;
+	color: #0A3871;
+	background-color: #F3F5FC;
+	width: 1440px;
+	height: 1024px;
+	font-family: Inter;
+}
+
+
+
+
+.btnIniJuego{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	position: absolute;
+	width: 317px;
+	height: 114px;
+	left: 561px;
+	top: 402px;
+	/* Dark blue/dark-blue-300 */
+	background: #0A3871;
+	border-radius: 24px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	align-items: center;
+	
+	text-align: center;
+	padding-left: 100px;
+	/* White */
+	color: #FFFFFF;
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	margin: auto;
+}
+
+.btnIniJuego:hover {
+	background: #072B61;
+}
+
+.btnAgrePal{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	position: absolute;
+	width: 280px;
+	height: 67px;
+	left: 575px;
+	top: 554px;
+	/* Dark blue/dark-blue-300 */
+	border: 1px solid #0A3871;
+	box-sizing: border-box;
+	background: #ffffff;
+	border-radius: 24px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 19px;
+	text-align: center;
+	padding-left: 40px;
+	/* Dark blue/dark-blue-300*/
+	color: #0A3871;
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	margin: 0px 8px;
+}
+
+.btnAgrePal:hover {
+	background: #EFF1FA;
+
+}
+
+.tableroletras {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	position: absolute;
+	width: 464px;
+	height: 152px;
+	left: 488px;
+	top: 426px;
+	background: #EFF1FA;
+   
+  }
+
+.palabra {
+	display: flex;
+	flex-direction: row;
+	/*align-content: space-between;*/
+	justify-content: center; 
+	width: 464px;
+	height: 92px;
+	left: 0px;
+	top: 0px;
+	/* Inside auto layout */
+	order: 0;
+	flex-grow: 0;
+	margin: auto;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+}
+	
+.letras {
+	  
+	  position: absolute;
+	  width: 100px;
+	  height: 72px;
+	  left: 5px;
+	  top: 5px;
+	  font-family: Inter;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-size: 48px;
+	  text-align: center;
+	  color: #0A3871;
+}
+
+
+#ahorcado {
+	background-color: #F3F5FC;
+}
+
+.mensaje{
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	left: 800px;
+	top: 200px;
+	background-color: #f3f5fc;
+	color: #0f0;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	text-align: center;
+}
+
+
+.botones_juego{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 0px;
+		position: absolute;
+		width: 688px;
+		height: 67px;
+		left: 376px;
+		top: 601px;
+}
+		
+.nvojuego {
+		/* Auto layout */
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 24px;
+		position: static;
+		width: 332px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+		/* Dark blue/dark-blue-300 */
+		background: #0A3871;
+		border-radius: 24px;
+		/* Inside auto layout */
+		flex: none;
+		order: 0;
+		flex-grow: 1;
+		margin: 0px 24px;
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		padding-left: 100px;
+		/* White */
+		color: #FFFFFF;
+		/* Inside auto layout */
+		flex: none;
+		order: 0;
+		flex-grow: 1;
+		margin: 0px 8px;
+		}
+		
+.desistir{
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	position: static;
+	width: 332px;
+	height: 67px;
+	left: 356px;
+	top: 0px;
+	/* Dark blue/dark-blue-300 */
+	border: 1px solid #0A3871;
+	box-sizing: border-box;
+	border-radius: 24px;
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 1;
+	margin: 0px 24px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	padding-left: 130px;
+	/* White */
+	color: #0A3871;
+	/* Inside auto layout */
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	margin: 0px 8px;
+}
+
+.letrasusadas {
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	position: static;
+	width: 136px;
+	height: 36px;
+	left: 164px;
+	top: 116px;
+	/* Inside auto layout */
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 24px 0px;
+	background-color: #F3F5FC;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 150%;
+	/* identical to box height, or 36px */
+	text-align: center;
+
+	/* Gray/gray-400 */
+	color: #495057;
+	}
+
+#botonera{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	position: absolute;
+	width: 688px;
+	height: 67px;
+	left: 376px;
+	top: 601px;
+		
+}
+
+.btnAgregar{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+position: static;
+width: 332px;
+height: 67px;
+left: 0px;
+top: 0px;
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 24px;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 0px 24px;
+left: 24px;
+top: 24px;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 19px;
+text-align: center;
+padding-left: 85px;
+/* Dark blue/dark-blue-300 */
+color: #f6f7f8;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 0px 8px;
+}
+
+.btnAgregar:hover {
+	background-color: #072B61;
+
+}
+
+.btnCancelar {
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+position: static;
+width: 332px;
+height: 67px;
+left: 356px;
+top: 10px;
+/* Dark blue/dark-blue-300 */
+border: 1px solid #0A3871;
+box-sizing: border-box;
+border-radius: 24px;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+margin: 0px 24px;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 19px;
+text-align: center;
+padding-left: 120px;
+/* Dark blue/dark-blue-300 */
+color: #0A3871;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 0px 8px;}
+
+._8letras{
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 215px;
+height: 18px;
+left: 376px;
+top: 567px;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+/* Gray/gray-400 */
+color: #495057;
+opacity: 0.8;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 8px;
+
+}
+
+.nueva-palabra {
+	position: absolute;
+	width: 299px;
+	height: 48px;
+	left: 376px;
+	top: 256px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 150%;
+	color: #0A3871;
+	border: 0px none;
+	background-color: #f6f7f8;;
+
+}

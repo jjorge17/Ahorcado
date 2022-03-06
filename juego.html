@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="frame4">
+      <div class="logo">
+        <img src="img/Vector.png" width="32" height="48" >
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <canvas id="ahorcado" width="800px" height="400px">
+      </canvas>
+    </section>
+      
+    <div class="mensaje" id="mensajes">Ganaste!!</div>
+    
+    <div class="tableroletras">
+      <div class="palabra" id="palabra">
+        <div class= "letras" id="letra">
+        </div>
+      </div>
+      <div class="letrasusadas" id="letrasusadas">
+      </div>
+    </div>
+    
+    <div class="botones_juego">
+        <button class="nvojuego" id="iniciar-juego" >Nuevo juego</button>
+        <button class="desistir" id="desisitir">Desistir</button> 
+    </div> 
+  </main>
+  <footer>
+    <p>&copy 2022 - Jorge A. Jurado</p>
+  </footer>
+
+  <script src="canvas.js"></script>
+  <script src="ahorcado.js"></script>
+  <script src="agregarpalabras.js"></script>
+</body>
+</html>
