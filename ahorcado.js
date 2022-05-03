@@ -1,34 +1,39 @@
-// dibujar el inicio del juego
-dibujar();
-//Elegir aleatoriamente la palabra y generar un array
-formarPalabra();
-//quedar a la espera de las letra
-//1 verificar letra ingresada si es una letra y en mayuscula
+var Error = 0;
+var xi = 175;
+var yi = 350;
+var juego;
+var Palabra = document.getElementById("palabras");
+var Letras = document.getElementById("letra");
+var Mensaje = document.getElementById("mensajes");
+var tecla;
+var arreglo = obtenerArregloPalabras();
+var palabraElegida = elegirPalabra().split('');
 
-//var eventoControlado = false;
-/*window.onload = function(){
-   window.onkeypress = validacionLetra; 
-    document.onkeyup = mostrarLetra;
-}*/
+//inicializa el juego
+inicializarJuego();
+//comprueba si esta jugando
 
-var text = document.getElementById("letras");
+document.addEventListener('keypress', function (e) {
+    if (juego) {
+        validar(e);
+        if (tecla == "") {
+            return
+        } else {
+            var acierto = controlaLetras(tecla);
+            if (acierto) {
+                if (completaPalabra())
+                    finalJuego(true);
+            } else {
+                Error = Error + 1;
+                dibujar(Error);
+                if (Error == 7) {
+                    finalJuego(false)
+                }
+            }
+        }
 
-validacionLetra();
-mostrarLetra;
-
-//verificar si está en la palabra
-
-// en caso error dibujar una parte del dibujo y controlar cuantas partes van
-
-// si no hay mas partes que dibujar finalizar el juego con mensaje perdio
-
-// si se completo la palabra dibujar mensaje de Gano y finalizar
-
-// si no sucedio ninguno de los pasos anteriores volver al paso 1
-
-
-
-
-
-
+    } else {
+        alert('Pulsa Nuevo Juego para\n comenzar una partida nueva.');
+    }
+})
 

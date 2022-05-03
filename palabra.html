@@ -1,36 +1,40 @@
 <!DOCTYPE HTML>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ahorcado</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ahorcado</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link href="./css/palabra.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<header>
-  <div class="frame4">
-    <div class="logo">
-      <img src="img/Vector.png" width="32" height="48" >
+  <header>
+    <div class="frame4">
+      <div class="logo">
+        <img src="img/Vector.png" width="32" height="48">
+      </div>
     </div>
-  </div>
-</header>
-<main>
-  <input class="nueva-palabra" id="nueva-palabra" placeholder="Ingrese una palabra" >
-  <div>
-  <div class="_8letras">"Máximo de 8 letras"</div>
-  </div>
-  <div id="botonera">
-      <button class="btnAgregar" id="agregar-palabra" >Agregar y guardar</button>
-      <button class="btnCancelar" id="cancelar-palabra">Cancelar</button> 
-  </div>
-</main>
-<footer>
-  <p>&copy 2022 - Jorge A. Jurado</p>
-</footer>  
+  </header>
+  <main>
+    <input class="nueva-palabra" id="nueva-palabra" placeholder="Ingrese una palabra">
+    <div class="bajo">
+      <div class="_8letras">"Máximo de 8 letras"</div>
+      <div class="botonera">
+        <button class="btnAgregar boton" id="agregar-palabra">Agregar y guardar</button>
+        <button class="btnCancelar boton" id="cancelar-palabra">Cancelar</button>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <p>&copy 2022 - Jorge A. Jurado</p>
+  </footer>
   <script src="funciones.js"></script>
   <script src="agregarpalabras.js"></script>
 </body>
+
 </html>

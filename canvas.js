@@ -1,6 +1,17 @@
 var pantalla = document.querySelector("#ahorcado");
 var pincel =  pantalla.getContext("2d");
 
+
+function dibujarSuelo (Xi, yi){
+        pincel.strokeStyle = "green";
+        pincel.lineWidth = 15;
+        pincel.beginPath();
+        pincel.moveTo(xi- 50 ,yi+10); 
+        pincel.lineTo(xi+500, yi+10);
+        pincel.closePath();
+        pincel.stroke();
+}
+
 function dibujarHorca(xi,yi){
     if (pantalla.getContext) {
     //Dibujar la Horca

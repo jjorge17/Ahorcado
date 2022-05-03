@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ahorcado</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<link href="./css/juego.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -22,21 +23,20 @@
       </canvas>
     </section>
       
-    <div class="mensaje" id="mensajes">Ganaste!!</div>
+    <div class="mensaje" id="mensajes"></div>
     
     <div class="tableroletras">
       <div class="palabra" id="palabra">
-        <div class= "letras" id="letra">
-        </div>
+        <input type="text" onfocus="this.blur()" autocomplete="off"  class="palabras" id="palabras">      
       </div>
       <div class="letrasusadas" id="letrasusadas">
-        <input class="letras" id="letras" >      
+        <input type="text" onfocus="this.blur()" autocomplete="off" class="letra" id="letra" >      
       </div>
     </div>
     
     <div class="botones_juego">
-        <button class="nvojuego" id="iniciar-juego" >Nuevo juego</button>
-        <button class="desistir" id="desisitir">Desistir</button> 
+        <button class="nvojuego boton" id="iniciar-juego" onClick= location.reload()  >Nuevo juego</button>
+        <button class="desistir boton" id="desisitir" onclick="location.href='index.html'">Desistir</button> 
     </div> 
   </main>
   <footer>
@@ -44,8 +44,7 @@
   </footer>
 
  <script src="canvas.js"></script>
-  <script src="funciones.js"></script>
+ <script src="funciones.js"></script>
  <script src="ahorcado.js"></script>
- <script src="agregarpalabras.js"></script>
-</body>
+ </body>
 </html>

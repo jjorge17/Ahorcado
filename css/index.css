@@ -1,0 +1,36 @@
+main{
+    display: flex;
+	justify-content: space-around;
+    height: 1024px;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnIniJuego{
+	width: 320px;
+	height: 110px;
+    background: #0A3871;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.btnAgrePal{
+	width: 320px;
+	height: 110px;
+    background: #ffffff;
+	color: #0A3871;
+}
+
+footer{
+    background: #0A3871;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 13px;
+	margin: 40px 0
+}
