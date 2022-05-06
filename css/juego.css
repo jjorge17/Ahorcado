@@ -51,7 +51,7 @@
 	display: block;
 	position: absolute;
     float: right;
-	right:  40px;
+	left:  50%;
 	top: 150px;
 	margin: 20px auto;	
 	text-align: center;
